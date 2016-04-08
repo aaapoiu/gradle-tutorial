@@ -66,3 +66,13 @@ task cellphone {
         println '전화끊기'
     }
 }
+
+defaultTasks 'myBasicTask'
+
+task myBasicTask << {
+    println 'default task'
+}
+
+task other << {
+    println 'other'
+}
