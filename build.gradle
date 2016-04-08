@@ -70,6 +70,7 @@ task cellphone {
 defaultTasks 'myBasicTask'
 
 task myBasicTask(description: 'default task') << {
+    logging.level = LogLevel.DEBUG
     println 'default task'
 }
 
