@@ -43,5 +43,13 @@ dependencies {
 }
 
 task hello {
-    println 'gradle hello'
+    println 'hello'
+}
+
+task run << {
+    println 'running now'
+}
+
+task start {
+    println 'ready'
 }
