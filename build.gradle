@@ -69,9 +69,11 @@ task cellphone {
 
 defaultTasks 'myBasicTask'
 
-task myBasicTask << {
+task myBasicTask(description: 'default task') << {
     println 'default task'
 }
+
+tasks.myBasicTask.dependsOn 'other'
 
 task other << {
     println 'other'
